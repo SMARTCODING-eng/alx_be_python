@@ -3,7 +3,7 @@ This is a match case calculator that uses python's match cases
 """
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
-operation = input("Enter the operation(+, -, *, /): ")
+operation = input("Enter the operation (+, -, *, /):. ")
 
 match operation:
     case "+":
