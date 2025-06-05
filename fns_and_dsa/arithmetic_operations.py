@@ -7,7 +7,12 @@ def perform_operation(num1, num2, operation):
     elif operation == 'multiply':
         result = num1 * num2
     elif operation == 'divide':
-        result = num1 / num2 if num2 != 0 else 'Error: cannot divide by zero'
+        if num2 == 0:
+            print("Error: cannot divide by zero")
+            return None
+        result = num1 / num2 
+    else:
+        print("Error: Unknown operation")
     return result
 if __name__ == "__main__":
     num1 = 10.0
