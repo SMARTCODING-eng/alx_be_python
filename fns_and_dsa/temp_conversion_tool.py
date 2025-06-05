@@ -23,7 +23,7 @@ def main():
         print(f"{user_temp}°{temp_type} is {result}°F")
     
     else:
-        return "Invalid Temperature type"
+        print("Invalid temperature. Please enter a numeric value.")
     
 if __name__ == "__main__":
     # result = main()
