@@ -1,9 +1,9 @@
 
 rows = int(input("Enter the size of the pattern: "))
-count = 0
+counter = 0
 
-while count <  rows:
+while counter <  rows:
     for i in range(rows):
-        print("*", end="")
+        print("*", end=" ")
     print()
-    count +=1
+    counter +=1
