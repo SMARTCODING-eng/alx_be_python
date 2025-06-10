@@ -12,7 +12,9 @@ class BankAccount:
         if amount > 0 and self.account_balance >= amount:
             self.account_balance -= amount
             return True
-        return False
+        else: 
+            return "Error: cannot withdraw more than your balance"
+
     
     def display_balance(self):
         current_balance = self.account_balance
