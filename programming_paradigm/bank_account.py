@@ -9,12 +9,12 @@ class BankAccount:
         return False
     
     def withdraw(self, amount):
-        if amount > 0 and self.account_balance >= amount:
+        if amount > 0 and amount <= self.account_balance:
             self.account_balance -= amount
             return True
-        else: 
-            return "Error: cannot withdraw more than your balance"
-
+        elif amount > self.account_balance:
+            return False
+        return False
     
     def display_balance(self):
         current_balance = self.account_balance
