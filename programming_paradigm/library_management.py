@@ -3,7 +3,13 @@ class Book:
         self.title = title
         self.author = author
         self._is_checked_out = False
-
+        
+    def return_book(self):
+        """Mark the book as returned"""
+        if not self.is_checked_out:
+            return False  # Wasn't checked out
+        self.is_checked_out = False
+        return True
 
 
 class Library:
