@@ -19,7 +19,7 @@ class Library:
     
     def add_book(self, book):
         if not book:
-            raise ValueError("Can only add Book objects to thr library")
+            raise ValueError("Can only add Book objects to the library")
         self._books.append(book)
 
     def check_out_book(self, title):
